@@ -1,0 +1,104 @@
+.navbar{
+    background: #282828;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar__logo{
+    object-fit: contain;
+    height: 80px;
+    width: 80px;
+}
+
+.navbar__menu__toggle{
+    display: none;
+    font-size: 2.3rem;
+}
+
+.navbar__mobile{
+    display: none;
+}
+
+.navbar__menu{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.navbar__menu .navbar__menu-item{
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .2s, color .2s;
+    border-radius: 10px;
+}
+
+.navbar__menu .navbar__menu-item:hover{
+    background: #fff;
+    color: #282828;
+    
+}
+
+
+.navbar__mobile .navbar__menu-item{
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 425px){
+    .navbar__container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .navbar__logo{
+        height: 60px;
+        width: 60px;
+    }
+
+    .navbar__menu__toggle{
+        display: block;
+    }
+
+    .navbar__menu{
+        display: none;
+    }
+
+    .navbar__mobile.show{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Tablet / MD Screens */
+@media only screen and (max-width: 768px){
+
+}
+
+
+/* Desktop / LG Screens */
+@media only screen and(min-width: 1024px){
+
+}
